@@ -17,13 +17,13 @@ def get_connection():
     if GSheetsConnection is None:
         return None
     
-    # Check if Google Sheets credentials exist in Streamlit secrets
-    if "connections" in st.secrets and "gsheets" in st.secrets.connections:
-        try:
+    try:
+        # Check if Google Sheets credentials exist in Streamlit secrets
+        if "connections" in st.secrets and "gsheets" in st.secrets.connections:
             # We initialize connection with a unique name to avoid conflicts
             return st.connection("gsheets", type=GSheetsConnection)
-        except Exception:
-            pass
+    except Exception:
+        pass
     return None
 
 def load_data(key, default):

@@ -1,0 +1,186 @@
+/* --- GENEL SAYFA VE TEMA AYARLARI --- */
+body {
+    background-color: #0b0e14;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* --- YAN YANA EKRAN YERLEŞİMİ --- */
+.main-container {
+    display: flex;
+    gap: 20px;
+    width: 98%;
+    max-width: 1600px;
+    margin: 20px auto;
+    height: calc(100vh - 40px);
+}
+
+/* --- SOL TARAF: TAKİP LİSTESİ --- */
+.sidebar {
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    background-color: #131722;
+    border: 1px solid #2b313f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #f5a623;
+    border-bottom: 1px solid #2b313f;
+    padding-bottom: 15px;
+}
+
+.add-stock {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#newStockInput {
+    flex: 1;
+    padding: 10px;
+    background-color: #1e222d;
+    border: 1px solid #2b313f;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#newStockInput:focus {
+    outline: none;
+    border-color: #29b6f6;
+}
+
+#addStockBtn {
+    padding: 0 15px;
+    background-color: #29b6f6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#addStockBtn:hover {
+    background-color: #0288d1;
+}
+
+ul#favoritesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex: 1;
+}
+
+ul#favoritesList::-webkit-scrollbar {
+    width: 6px;
+}
+ul#favoritesList::-webkit-scrollbar-thumb {
+    background: #2b313f; 
+    border-radius: 4px;
+}
+
+ul#favoritesList li {
+    background-color: #1e222d;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+ul#favoritesList li:hover {
+    background-color: #2b313f;
+    border-color: #29b6f6;
+    transform: translateX(4px);
+}
+
+.delete-btn {
+    cursor: pointer;
+    color: #ff4b4b;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.delete-btn:hover {
+    color: #ff1744;
+    transform: scale(1.2);
+}
+
+/* --- SAĞ TARAF: ANALİZ SONUÇLARI --- */
+.analysis-area {
+    flex: 3;
+    background-color: #131722;
+    border: 1px solid #2b313f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+#stockTitle {
+    color: #29b6f6;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2b313f;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#tv_ta_container {
+    width: 100%;
+    max-width: 800px; /* Üçgen (1 üst, 2 alt) düzenine zorlar */
+    height: 550px; /* Kaydırma çubuğunun çıkmasını engelleyecek ideal yükseklik */
+    margin: 0 auto; /* Kutuyu merkeze ortalar */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* --- ÖZEL ZAMAN BUTONLARI --- */
+.interval-btn {
+    background-color: #1e222d;
+    color: #888;
+    border: 1px solid #2b313f;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.interval-btn:hover {
+    background-color: #2b313f;
+    color: #fff;
+}
+
+.interval-btn.active {
+    background-color: #29b6f6;
+    color: #fff;
+    border-color: #29b6f6;
+    box-shadow: 0 0 10px rgba(41, 182, 246, 0.3);
+}

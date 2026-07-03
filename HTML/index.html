@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Borsa Radarı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        
+        <div class="sidebar">
+            <h3 style="text-align: center;">⭐ Takip Listesi</h3>
+            <div class="add-stock">
+                <input type="text" id="newStockInput" placeholder="Hisse Ekle (Örn: ASELS)">
+                <button id="addStockBtn">+</button>
+            </div>
+            <ul id="favoritesList">
+            </ul>
+        </div>
+
+        <div class="analysis-area">
+            <h2 id="stockTitle">Hisse Seçiniz</h2>
+            
+            <div id="custom-intervals" style="display: none; justify-content: center; gap: 10px; margin-bottom: 15px;">
+                <button class="interval-btn active" data-val="1D">1 Gün</button>
+                <button class="interval-btn" data-val="1W">1 Hafta</button>
+                <button class="interval-btn" data-val="1M">1 Ay</button>
+            </div>
+
+            <div class="tradingview-widget-container" id="tv_ta_container">
+                <p style="text-align: center; color: #888; margin-top: 50px;">Teknik analizini görmek istediğiniz hisseye listeden tıklayın.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

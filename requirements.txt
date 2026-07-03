@@ -1,0 +1,10 @@
+streamlit
+yfinance
+pandas
+numpy
+plotly
+openpyxl
+isyatirimhisse
+google-genai
+streamlit-gsheets
+git+https://github.com/rongardF/tvdatafeed.git

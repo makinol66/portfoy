@@ -1,0 +1,10 @@
+Temel Analizde PD/DD tablosu yap. 5 yıllık ve 10 yıllık sütun olsun, bir de şimdiki sütun olsun.
+Temel analizde de altta pd/dd gibi değerlerin de 10 yıllık grafikleri olsun.
+
+Temel analizde bölünmeyi PD DD değerine eklet, saçma sonuçlar çıkıyor.
+Temel analizde bankaları ya da varlık yönetimleri tarayamıyor, kontrol ettir.
+
+
+Cüzdanda da tarama gibi hisse adına tıklayınca fintables sayfasına gitsin. Teknik analiz deyince de tradinview sayfasına gitsin.
+
+Cüzdan ana sayfasında tüm satım geçmişleri görünsün.

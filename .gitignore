@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Dynamic Data Files (to prevent exposing personal portfolio / API keys)
+*.json
+!api_ayarlar.json.example
+
+# Streamlit config
+.streamlit/

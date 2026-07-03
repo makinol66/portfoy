@@ -1,0 +1,3 @@
+cd C:\İşler\Deneme\Phyton
+
+python -m streamlit run Bist_Tarama.py

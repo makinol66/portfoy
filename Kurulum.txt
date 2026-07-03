@@ -1,0 +1,45 @@
+Phyton kur 
+
+2. Adım: Kurulum ve Çalıştırma
+
+Şimdi o yeni açtığınız siyah ekrana sırasıyla şu komutları girelim:
+
+Önce kütüphanelerimizi kuralım (Kopyalayıp yapıştırın ve Enter'a basın):
+
+python -m pip install streamlit yfinance pandas
+
+3. Adım: Excel Okuma Aracını Kurma
+
+Python'ın Excel dosyalarını okuyabilmesi için ufak bir yardımcı eklentiye ihtiyacı var.
+
+Lütfen açık olan siyah ekranınızı (Terminal) kapatın ve Windows arama çubuğundan cmd yazarak yeni bir Komut İstemi açın.
+
+Şu kodu kopyalayıp yapıştırın ve Enter'a basın (Saniyeler içinde inecektir):
+
+python -m pip install openpyxl
+
+Sonra da komutlar dosyasından sırayla komutları cmd'ye yapıştır
+
+Bunu yazarak da favori hisseler kısmında grafikte çizim yapabilirsin
+python -m pip install plotly
+
+Endeksler için kur:
+python -m pip install https://github.com/rongardF/tvdatafeed/archive/main.zip
+
+
+
+Hassas tarama için yeni kütüphane:
+python -m pip install --upgrade tvdatafeed
+hata verirse:
+python -m pip install https://github.com/rongardF/tvdatafeed/archive/refs/heads/main.zip
+
+
+Bilanço ve temettü için tarama kütüphanesi:
+python -m pip install isyatirimhisse
+
+Teknik Analiz Yapay zeka yorumu için Gemini kütüphanesi:
+python -m pip install google-genai
+
+
+PD/DD için kütüphane:
+python -m pip install isyatirimhisse

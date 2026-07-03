@@ -6,5 +6,5 @@ plotly
 openpyxl
 isyatirimhisse
 google-genai
-streamlit-gsheets
+st-gsheets-connection
 git+https://github.com/rongardF/tvdatafeed.git
